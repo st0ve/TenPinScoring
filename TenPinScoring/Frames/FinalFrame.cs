@@ -3,9 +3,9 @@ using TenPinScoring.FrameOutcomes;
 
 namespace TenPinScoring.Frames
 {
-    internal class FinalFrame : FrameBase
+    public class FinalFrame : FrameBase
     {
-        public FinalFrame(int maxTurns) : base(maxTurns) { }
+        public FinalFrame() : base(3) { }
 
         protected override void UpdateFrameOutcome(Queue<int> rolls)
         {

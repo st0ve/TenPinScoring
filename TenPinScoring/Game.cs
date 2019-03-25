@@ -14,9 +14,9 @@ namespace TenPinScoring
         {
             for (int i = 0; i < numberOfFrames - 1; i++)
             {
-                _frames.Add(new Frame(maxTurns: 2));
+                _frames.Add(new Frame());
             }
-            _frames.Add(new FinalFrame(maxTurns: 3));
+            _frames.Add(new FinalFrame());
         }
 
         public GameResult Play(Queue<int> rolls)

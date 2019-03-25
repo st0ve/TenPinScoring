@@ -4,7 +4,7 @@ using TenPinScoring.Entities;
 
 namespace TenPinScoring.Frames
 {
-    internal abstract class FrameBase : IFrame
+    public abstract class FrameBase : IFrame
     {
         protected readonly int _maxTurns;
         protected int _turnsPlayed;
