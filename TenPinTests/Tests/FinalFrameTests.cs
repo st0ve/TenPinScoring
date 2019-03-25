@@ -65,5 +65,19 @@ namespace TenPinTests.Tests
             //assert
             Assert.That(frame.Turns, Has.Count.EqualTo(3));
         }
+
+        [Test]
+        public void PlayFrame_OpenFrameRolled_TwoBallsRolled()
+        {
+            // setup
+            FinalFrame frame = new FinalFrame();
+            Queue<int> rolls = new Queue<int>(new[] { 0, 1, 10 });
+
+            // act
+            frame.PlayFrame(rolls);
+
+            //assert
+            Assert.That(frame.Turns, Has.Count.EqualTo(2));
+        }
     }
 }
